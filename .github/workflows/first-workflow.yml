@@ -1,0 +1,12 @@
+name: my first workflow
+on: push
+jobs:
+    first-job:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Wecome message
+          run: echo "Wecome to first workflow"
+        - name: list files
+          run: ls -ltra
+        - name: cread file
+          run: cat README.md
