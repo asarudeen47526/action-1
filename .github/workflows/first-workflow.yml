@@ -4,10 +4,12 @@ jobs:
     first-job:
         runs-on: ubuntu-latest
         steps:
+        - name: checkout users
+          uses: actions/checkout@v6
         - name: Wecome message
           run: echo "Wecome to first workflow"
         - name: list files
           run: ls -ltra
-        - name: read memory
-          run: df -kh
+        - name: read files
+          run: cat READ
 
